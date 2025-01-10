@@ -1,0 +1,170 @@
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 180px;
+    
+    
+}
+a {
+    font-size: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: aliceblue 0px 0px 5px  ;
+
+    
+}
+nav {
+    text-align: center;
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1b1e24;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: aliceblue;
+    top: 45;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+
+  }
+  .content:hover {
+    background-color: #1b1e24;
+    color: aliceblue;
+    border-color: aliceblue;
+    border: 1px 1px aliceblue;
+  }
+  .content a:hover {
+    color: aliceblue;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #1b1e24;
+    border: 4px solid aliceblue;
+    top: 15px; 
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid aliceblue;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent aliceblue;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid aliceblue;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent aliceblue transparent transparent;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: aliceblue;
+    position: relative;
+    border-radius: 6px;
+    border: solid #c0d3fa;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+      
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      
+    }
+  
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent aliceblue transparent transparent;
+      
+    }
+  
+    .left::after, .right::after {
+      left: 15px;
+      
+    }
+  
+    .right {
+      left: 0%;
+    }
+  }
+
+  .content a {
+    cursor: pointer;
+    color: black;
+  }
+  body {
+    background-image: url(lyfe.jpg) ;
+    background-size: contain;
+  }
+  
+  p {
+    font-size: 27px;
+  }
+  #logo {
+    width: 770px;
+  }
+
